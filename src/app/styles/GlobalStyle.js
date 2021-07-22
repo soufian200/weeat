@@ -1,4 +1,5 @@
 import { createGlobalStyle } from 'styled-components';
+import colors from '../constants/colors';
 
 const GlobalStyle = createGlobalStyle`
     *{
@@ -25,7 +26,7 @@ const GlobalStyle = createGlobalStyle`
     }
     body{
         overflow-x:hidden;
-        // background:red
+        background: ${colors.green50};
     }
     a{
         text-decoration:none;

@@ -5,7 +5,6 @@ import Center from '../styled-components/Center';
 
 const Nav = styled.nav`
     width: 100%;
-    // background:red;
     display: flex;
     align-items:center;
     position:relative;
@@ -114,7 +113,6 @@ const Link = styled.a`
         bottom: 0;
         left: 1rem;
         transition: .3s;
-        
     }
     &:hover:after{
         width: 2.4rem;
@@ -145,7 +143,7 @@ const Service = styled(Center)`
     cursor: pointer;
 
     :hover{
-        background: ${colors.secondary};
+        background: ${colors.green50};
     }
 
     & svg{

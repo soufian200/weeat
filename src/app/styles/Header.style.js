@@ -1,11 +1,11 @@
 import styled from 'styled-components';
 import colors from '../constants/colors';
 import mediaSizes from '../constants/mediaSizes';
-import Center from '../styled-components/Center';
 
 const Head = styled.div`
     background: ${colors.green50};
     // height: 100vh;
+    padding-bottom: 10rem;
     position:relative;
 
     .circle-full{
@@ -88,9 +88,6 @@ const Wrapper = styled.div`
     overflow: hidden;
 }
 
-
-
-
 & > div.circle{
     
     :after{
@@ -124,6 +121,7 @@ const Txt = styled.div`
     max-width: 60rem;
     width: 100%;
     padding: 7rem;
+    padding-bottom:14rem;
     padding-left:5rem ;
     position:relative;
     z-index:4;
@@ -154,19 +152,6 @@ const Title = styled.h1`
     }
 `;
 
-const Para = styled.p`
-    margin-bottom:3.5rem;
-    font-size: 1.19rem;
-    color:${colors.graygreen} ;
-    max-width: 40rem;
-
-    /**
-     * Small Media
-     * */ 
-    @media (max-width: ${mediaSizes.md.maxWidth}) {
-        text-align:center
-    }
-`;
 
 const GetStarted = styled.button`
     padding: 1.2rem 3rem;
@@ -193,4 +178,4 @@ const GetStarted = styled.button`
 `;
 
 
-export { Head, Wrapper, Txt, Title, Para, GetStarted, Circle }
+export { Head, Wrapper, Txt, Title, GetStarted, Circle }
