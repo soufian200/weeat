@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import cir1 from "../assets/cir-1.jpg"
+import cir1 from "../assets/1.jpg"
 import colors from "../constants/colors"
 import mediaSizes from "../constants/mediaSizes";
 

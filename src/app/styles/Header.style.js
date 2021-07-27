@@ -118,7 +118,7 @@ const Wrapper = styled.div`
     }
 `;
 const Txt = styled.div`
-    max-width: 60rem;
+    max-width: 55rem;
     width: 100%;
     padding: 7rem;
     padding-bottom:14rem;

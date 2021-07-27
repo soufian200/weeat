@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 import colors from '../constants/colors';
-import mediaSizes from '../constants/mediaSizes';
-import Center from '../styled-components/Center';
 
 const Cards = styled.div`
     backgound:white;
@@ -50,8 +48,6 @@ const Price = styled.div`
     box-shadow: 0 0 .3rem gray;
     font-weight: bold;
     font-size:1.4rem;
-
-    
 `;
 const Body = styled.div`
     padding: 2rem;

@@ -1,13 +1,14 @@
 import React from "react";
 import Container from "../styled-components/Container";
 import Title from "./Title";
-import { Wrap, Content, Block, Img, Right, Txt, Left } from "../styles/Aboutus.style"
+import { Content, Block, Img, Right, Txt, Left } from "../styles/Aboutus.style"
 import Center from "../styled-components/Center";
 import Para from "../styled-components/Para";
-import GreenSquares from "./GreenSquares";
-import GreenBorder from "./GreenBorder";
-export default function AboutUs() {
-    return <Wrap>
+import Section from "../styled-components/Section";
+
+
+export default function AboutUs({ id }) {
+    return <Section id={id}>
         <Container>
             <Content>
                 <Block>
@@ -38,10 +39,10 @@ export default function AboutUs() {
                         </Txt>
                     </Right>
                 </Block>
-                <GreenSquares r="0" />
+                {/* <GreenSquares r="0" />
                 <GreenBorder w="40" />
-                <GreenBorder w="40" x="100" y="40" />
+                <GreenBorder w="40" x="100" y="40" /> */}
             </Content>
         </Container>
-    </Wrap>
+    </Section>
 }

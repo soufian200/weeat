@@ -1,17 +1,14 @@
 import Center from "../styled-components/Center";
 import Container from "../styled-components/Container";
 import Title from "./Title";
-
 import Section from "../styled-components/Section";
-import m1 from "../assets/m-1.jpg"
-import { AiOutlineStar, AiFillStar } from "react-icons/ai"
-import GreenSquares from "./GreenSquares";
-import { Meal, Meals, Info, TitleMeal, Price, Img, Im } from "../styles/Menu.style";
+import m1 from "../assets/7.jpg"
+import { Meal, Meals, Info, TitleMeal, Price, Img, Im, ViewMore } from "../styles/Menu.style";
 import Para from "../styled-components/Para";
-import { useState } from "react";
 
-export default function Menu() {
-    const [meals, setMeals] = useState([
+
+export default function Menu({ id }) {
+    const meals = [
         {
             id: 1,
             title: "Delicious Pan Cake",
@@ -54,11 +51,11 @@ export default function Menu() {
             price: 144.31,
             img: m1
         }
-    ])
-    return <Section>
+    ];
+    return <Section id={id}>
 
         <Container>
-            <Center><Title center={true} txt="menu" /></Center>
+            <Center><Title txt="menu" /></Center>
             <Meals>
                 {
 
@@ -80,6 +77,9 @@ export default function Menu() {
                     </Meal>)
                 }
             </Meals>
+            <Center>
+                <ViewMore>view more</ViewMore>
+            </Center>
         </Container>
     </Section>
 }

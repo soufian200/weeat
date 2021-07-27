@@ -9,7 +9,6 @@ const Meals = styled.div`
 
 const Meal = styled.div`
     width: 50%;
-    // background:red;
     max-width: 50rem;
     min-width: 35rem;
     margin-right: 2rem;
@@ -20,8 +19,8 @@ const Info = styled.div`
     width: 70%;
     & > p{
         margin-bottom: 2rem;
+        text-align: left;
     }
-    // background:green
 
 `;
 const TitleMeal = styled.div`
@@ -48,8 +47,7 @@ const Img = styled.div`
 
         :before{
             content: '';
-        position:absolute;
-
+            position:absolute;
             width: 11.5rem;
             height: 11.5rem;
             background:  ${colors.secondary};
@@ -57,8 +55,6 @@ const Img = styled.div`
             overflow: hidden;
         }
     }
-   
-
 `;
 const Im = styled.div`
     width: 10rem;
@@ -77,10 +73,27 @@ const Im = styled.div`
         top: 0;
         left: 0;
         opacity: .1;
-
     }
 
-`
+`;
+
+const ViewMore = styled.div`
+    padding: 1.5rem 5rem;
+    background: transparent;
+    border: solid .2rem ${colors.primary};
+    margin-top: 5rem;
+    text-transform: capitlize;
+    text-transform: capitalize;
+    font-size: 1.4rem;
+    color: ${colors.primary};
+    cursor: pointer;
+    transition: .2s;
+
+    &:hover{
+        background: ${colors.primary};
+        color: #fff
+    }
+`;
 
 
-export { Meal, Meals, Info, TitleMeal, Price, Img, Im };
+export { Meal, Meals, Info, TitleMeal, Price, Img, Im, ViewMore };

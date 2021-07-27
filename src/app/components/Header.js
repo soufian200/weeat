@@ -3,20 +3,18 @@ import { FiChevronRight } from 'react-icons/fi';
 import Container from '../styled-components/Container';
 import { Head, Wrapper, Txt, Title, GetStarted, Circle } from '../styles/Header.style';
 import Navbar from './Navbar';
-import hero from "../assets/hero.svg"
-import cir1 from "../assets/cir-1.jpg"
-import cir2 from "../assets/cir-2.jpg"
-import cir3 from "../assets/cir-3.jpg"
 import Para from '../styled-components/Para';
+import cir1 from "../assets/1.jpg"
+import cir2 from "../assets/2.jpg"
+import cir3 from "../assets/3.jpg"
 
 
 
-export default function Header() {
-    return <Head>
+export default function Header({ id }) {
+    return <Head id={id}>
         <div className="circle-full"></div>
+        <Navbar />
         <Container>
-
-            <Navbar />
             <Wrapper>
                 <div className="circle"></div>
 

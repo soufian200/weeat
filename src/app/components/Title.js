@@ -18,13 +18,10 @@ const T = styled.h1`
         left: 0rem;
         transition: .3s;
     }
-    
 
     & > span{
         color: ${colors.primary};
     }
-
-
 `;
 
 export default function Title({ txt, subtxt }) {

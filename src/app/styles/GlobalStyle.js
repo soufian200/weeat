@@ -23,10 +23,13 @@ const GlobalStyle = createGlobalStyle`
     html{
         font-size: 62.5% ; // 62.5% = (10/16)*100 [target/browser fontsize]*100
         height: 100rem;//temprory;
+        scroll-behavior: smooth;
     }
     body{
         overflow-x:hidden;
         background: ${colors.green50};
+        font-family: 'Roboto', sans-serif;
+
     }
     a{
         text-decoration:none;

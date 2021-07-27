@@ -3,6 +3,8 @@ import GlobalStyle from './app/styles/GlobalStyle';
 
 
 function App() {
+  document.title = "welcome to weeat";
+
   return <>
     <GlobalStyle />
     <Landing />

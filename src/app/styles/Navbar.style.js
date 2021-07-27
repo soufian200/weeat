@@ -1,14 +1,24 @@
-import styled from 'styled-components';
+import styled, { css, keyframes } from 'styled-components';
 import colors from '../constants/colors';
 import mediaSizes from '../constants/mediaSizes';
 import Center from '../styled-components/Center';
 
+const fadeIn = keyframes`
+  0% { background: rgba(255,255,255,0) }
+  100% { rgba(255,255,255,1)}
+`;
 const Nav = styled.nav`
     width: 100%;
     display: flex;
     align-items:center;
     position:relative;
-    z-index:5
+    z-index:5;
+
+    ${({ active }) => active && css`
+    background: #fff;
+    position: fixed;
+    animation: ${fadeIn} .3s ease-in-out both;
+    `}
 `;
 const MenuIcon = styled.button`
     display:none;
@@ -51,12 +61,10 @@ const NavCon = styled.div`
     display: flex;
     justify-content:space-between;
     align-items:center;
-    
-
 `
 
 const Logo = styled.div`
-    // background:green;
+max-width: 10rem;
 `;
 const List = styled.ul`
     display:flex;
