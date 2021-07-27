@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "/weeat/static/css/main.6dea0f05.chunk.css",
+    "main.js": "/weeat/static/js/main.6d7afd3d.chunk.js",
+    "main.js.map": "/weeat/static/js/main.6d7afd3d.chunk.js.map",
+    "runtime-main.js": "/weeat/static/js/runtime-main.a2417f64.js",
+    "runtime-main.js.map": "/weeat/static/js/runtime-main.a2417f64.js.map",
+    "static/js/2.68db61b0.chunk.js": "/weeat/static/js/2.68db61b0.chunk.js",
+    "static/js/2.68db61b0.chunk.js.map": "/weeat/static/js/2.68db61b0.chunk.js.map",
+    "static/js/3.37e77de7.chunk.js": "/weeat/static/js/3.37e77de7.chunk.js",
+    "static/js/3.37e77de7.chunk.js.map": "/weeat/static/js/3.37e77de7.chunk.js.map",
+    "index.html": "/weeat/index.html",
+    "static/css/main.6dea0f05.chunk.css.map": "/weeat/static/css/main.6dea0f05.chunk.css.map",
+    "static/js/2.68db61b0.chunk.js.LICENSE.txt": "/weeat/static/js/2.68db61b0.chunk.js.LICENSE.txt",
+    "static/media/1.320d33b2.jpg": "/weeat/static/media/1.320d33b2.jpg",
+    "static/media/1.a70bd868.jpg": "/weeat/static/media/1.a70bd868.jpg",
+    "static/media/2.123b4221.jpg": "/weeat/static/media/2.123b4221.jpg",
+    "static/media/2.d6688cc8.jpg": "/weeat/static/media/2.d6688cc8.jpg",
+    "static/media/3.201f8ebd.jpg": "/weeat/static/media/3.201f8ebd.jpg",
+    "static/media/3.e15f6ddb.jpg": "/weeat/static/media/3.e15f6ddb.jpg",
+    "static/media/4.7c6cd0b7.jpg": "/weeat/static/media/4.7c6cd0b7.jpg",
+    "static/media/4.e80474d1.jpg": "/weeat/static/media/4.e80474d1.jpg",
+    "static/media/5.a4be9c9e.jpg": "/weeat/static/media/5.a4be9c9e.jpg",
+    "static/media/5.c66b61b9.jpg": "/weeat/static/media/5.c66b61b9.jpg",
+    "static/media/6.68991768.jpg": "/weeat/static/media/6.68991768.jpg",
+    "static/media/7.9ffe2e7f.jpg": "/weeat/static/media/7.9ffe2e7f.jpg",
+    "static/media/contact-us.d4fb97c9.png": "/weeat/static/media/contact-us.d4fb97c9.png",
+    "static/media/delivery-man.46b7add3.png": "/weeat/static/media/delivery-man.46b7add3.png",
+    "static/media/logo.4ecdea78.svg": "/weeat/static/media/logo.4ecdea78.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a2417f64.js",
+    "static/js/2.68db61b0.chunk.js",
+    "static/css/main.6dea0f05.chunk.css",
+    "static/js/main.6d7afd3d.chunk.js"
+  ]
+}
