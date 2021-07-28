@@ -2,11 +2,12 @@ import { AiFillInstagram, AiFillMail, AiOutlineFacebook, AiOutlinePhone, AiOutli
 import Container from "../styled-components/Container";
 import Para from "../styled-components/Para";
 import Section from "../styled-components/Section";
-import { Blocks, Block, Logo, SocialMedia, Wrap, H1, Form, Label, Input, Send, Terms } from "../styles/Footer.style";
+import { Blocks, Block, Logo, SocialMedia, Wrap, H1, Form, Label, Input, Send, Terms, Copyright } from "../styles/Footer.style";
 import logo from "../assets/logo.svg";
+import Center from "../styled-components/Center";
 
 export default function Footer() {
-    return <Section>
+    return <><Section>
         <Container>
             <Blocks>
                 <Block>
@@ -54,5 +55,10 @@ export default function Footer() {
                 </Block>
             </Blocks>
         </Container>
-    </Section>
+
+    </Section >
+        <Center>
+            <Copyright>copyright &copy; 2021</Copyright>
+        </Center>
+    </>
 }

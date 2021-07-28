@@ -106,4 +106,6 @@ const Terms = styled.div`
     }
 `;
 
-export { Blocks, Block, C, Logo, SocialMedia, Wrap, H1, Form, Label, Input, Send, Terms }
+const Copyright = styled.h3`margin-bottom: 2rem`;
+
+export { Blocks, Block, C, Logo, SocialMedia, Wrap, H1, Form, Label, Input, Send, Terms, Copyright }
