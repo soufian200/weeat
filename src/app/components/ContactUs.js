@@ -7,6 +7,7 @@ import Title from "./Title";
 
 
 export default function ContactUs({ id }) {
+
     return < Section id={id}> <Container>
 
         <Content>
@@ -26,9 +27,7 @@ export default function ContactUs({ id }) {
             </Block>
             <Block>
                 <Right>
-                    {/* <FormWrapper> */}
                     <Img />
-                    {/* </FormWrapper> */}
                 </Right>
             </Block></Content>
     </Container></Section>

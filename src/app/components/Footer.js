@@ -2,7 +2,7 @@ import { AiFillInstagram, AiFillMail, AiOutlineFacebook, AiOutlinePhone, AiOutli
 import Container from "../styled-components/Container";
 import Para from "../styled-components/Para";
 import Section from "../styled-components/Section";
-import { Blocks, Block, C, Logo, SocialMedia, Wrap, H1, Form, Label, Input, Send, Terms } from "../styles/Footer.style";
+import { Blocks, Block, Logo, SocialMedia, Wrap, H1, Form, Label, Input, Send, Terms } from "../styles/Footer.style";
 import logo from "../assets/logo.svg";
 
 export default function Footer() {
@@ -10,19 +10,16 @@ export default function Footer() {
         <Container>
             <Blocks>
                 <Block>
-                    <C>
-
-                        <Logo>
-                            <img src={logo} alt="logo" />
-                        </Logo>
-                        <SocialMedia>
-                            <AiOutlineFacebook size="30" />
-                            <AiOutlineWhatsApp size="30" />
-                            <AiFillInstagram size="30" />
-                            <AiOutlineTwitter size="30" />
-                            <AiOutlineYoutube size="30" />
-                        </SocialMedia>
-                    </C>
+                    <Logo>
+                        <img src={logo} alt="logo" />
+                    </Logo>
+                    <SocialMedia>
+                        <AiOutlineFacebook size="30" />
+                        <AiOutlineWhatsApp size="30" />
+                        <AiFillInstagram size="30" />
+                        <AiOutlineTwitter size="30" />
+                        <AiOutlineYoutube size="30" />
+                    </SocialMedia>
                 </Block>
                 <Block>
                     <Wrap>

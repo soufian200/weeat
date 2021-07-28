@@ -1,5 +1,6 @@
 import styled from "styled-components"
 import colors from "../constants/colors";
+import mediaSizes from "../constants/mediaSizes";
 
 const Meals = styled.div`
     display:flex;
@@ -8,12 +9,15 @@ const Meals = styled.div`
 `;
 
 const Meal = styled.div`
-    width: 50%;
-    max-width: 50rem;
-    min-width: 35rem;
+    width: 47%;
     margin-right: 2rem;
     margin-top: 2rem;
-    display:flex
+    display:flex;
+
+    @media (max-width: ${mediaSizes.md.maxWidth}) {
+        width: 100%;
+        margin-right: 0rem;
+    }
 `;
 const Info = styled.div`
     width: 70%;

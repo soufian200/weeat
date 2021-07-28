@@ -18,10 +18,46 @@ export default function Navbar() {
         } else { setActive(false) }
     })
 
+    const ulList = [
+        {
+            id: 1,
+            hash: "home",
+            item: "home"
+        },
+        {
+            id: 2,
+            hash: "about-us",
+            item: "about us"
+        },
+        {
+            id: 3,
+            hash: "popular",
+            item: "popular"
+        },
+        {
+            id: 4,
+            hash: "menu",
+            item: "menu"
+        },
+        {
+            id: 5,
+            hash: "why-us",
+            item: "why us"
+        },
+        {
+            id: 6,
+            hash: "testimonials",
+            item: "testimonials"
+        },
+        {
+            id: 7,
+            hash: "contact-us",
+            item: "contact us"
+        }
+    ]
+
     return <Nav active={active}>
         <Container>
-
-
             <NavCon>
                 <Logo>
                     <img src={logo} alt="logo" />
@@ -30,13 +66,9 @@ export default function Navbar() {
                     {isOpened ? <AiOutlineClose /> : <AiOutlineMenu />}
                 </MenuIcon>
                 <List isOpened={isOpened}>
-                    <Item><Link href="#home">home</Link></Item>
-                    <Item><Link href="#about-us">about us</Link></Item>
-                    <Item><Link href="#popular">popular</Link></Item>
-                    <Item><Link href="#menu">menu</Link></Item>
-                    <Item><Link href="#why-us">why us</Link></Item>
-                    <Item><Link href="#testimonials">testimonials</Link></Item>
-                    <Item><Link href="#contact-us">contact</Link></Item>
+                    {
+                        ulList.map(i => <Item key={i.id}><Link href={`#${i.hash}`} onClick={() => setIsOpened(false)}>{i.item}</Link></Item>)
+                    }
                     <Services>
                         <Service><FiPhoneCall /></Service>
                         <Service><AiOutlineShoppingCart /></Service>

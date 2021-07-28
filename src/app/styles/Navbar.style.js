@@ -15,9 +15,10 @@ const Nav = styled.nav`
     z-index:5;
 
     ${({ active }) => active && css`
-    background: #fff;
-    position: fixed;
-    animation: ${fadeIn} .3s ease-in-out both;
+        background: #fff;
+        position: fixed;
+        animation: ${fadeIn} .3s ease-in-out both;
+        box-shadow: 0 0.01rem 0.5rem grey;
     `}
 `;
 const MenuIcon = styled.button`

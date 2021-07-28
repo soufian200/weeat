@@ -4,9 +4,13 @@ import mediaSizes from '../constants/mediaSizes';
 
 const Head = styled.div`
     background: ${colors.green50};
-    // height: 100vh;
     padding-bottom: 10rem;
     position:relative;
+
+    @media (max-width: ${mediaSizes.md.maxWidth}) {
+        
+        padding-bottom: 0rem;
+    }
 
     .circle-full{
         clip-path:ellipse(49rem 47rem at 84% 4%);
@@ -24,14 +28,11 @@ const Head = styled.div`
             display:none;
         }
 
-        // @media (min-width: ${mediaSizes.md.maxWidth}) {
-           
-        //     background: orange;
-        // }
-        // @media (min-width: ${mediaSizes.md.maxWidth}) {
-        //     max-width: ${mediaSizes.md.maxContainer};
-        //     background: red;
-        // }
+        @media (max-width: ${mediaSizes.sm.maxWidth}) {
+            clip-path: ellipse(49rem 47rem at 53% -23.5%);
+            display: block
+        }
+        
     }
 }
 `;
@@ -132,7 +133,11 @@ const Txt = styled.div`
     @media (max-width: ${mediaSizes.md.maxWidth}) {
         display:flex;
         flex-direction: column;
-        align-items:center
+        align-items:center;
+        
+    }
+    @media (max-width: ${mediaSizes.sm.maxWidth}) {
+        padding: 4rem 3rem;
     }
 `;
 
@@ -148,7 +153,8 @@ const Title = styled.h1`
      * Small Media
      * */ 
     @media (max-width: ${mediaSizes.md.maxWidth}) {
-        text-align:center
+        text-align:center;
+        // padding: 4rem 3rem;
     }
 `;
 

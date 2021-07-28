@@ -12,7 +12,7 @@ const Card = styled.div`
     background:${colors.white};
     border-radius: 1rem;
     overflow: hidden;
-    box-shadow: 0 0 .4rem gray;
+    box-shadow: 0 .3rem .4rem #8080805e;
     transition: .2s;
     cursor: pointer;
     margin-bottom: 4rem;

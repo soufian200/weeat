@@ -2,6 +2,7 @@ import styled from "styled-components";
 import colors from "../constants/colors";
 import Center from "../styled-components/Center";
 import contactImg from "../assets/contact-us.png"
+import mediaSizes from "../constants/mediaSizes";
 
 const FormWrapper = styled(Center)`
     width: 100%;
@@ -10,9 +11,12 @@ const FormWrapper = styled(Center)`
     padding: 1rem
 `;
 const Form = styled.form`
-    // background: red;
     padding: 4rem;
     width: 80%;
+    @media (max-width: ${mediaSizes.md.maxWidth}) {
+        padding: 0rem;
+        width: 100%;
+    }
 `;
 
 const Input = styled.input`
@@ -46,15 +50,20 @@ const SendBtn = styled.button`
 `;
 const Img = styled.div`
     width: 55rem;
-    height: 50rem;
-    background: url('${contactImg}');
-    background-size: contain;
+    height: 40rem;
+    background: url('${contactImg}') no-repeat;
+    background-size: cover;
     position: relative;
+
+    @media (max-width: ${mediaSizes.md.maxWidth}) {
+        width: 100%;
+        height: 22rem;
+    }
 
     :before{
         content: "";
-        width: 55rem;
-        height: 50rem;
+        width: 100%;
+        height: 100%;
         border: solid .1rem ${colors.secondary};
         background: transparent;
         position: absolute;

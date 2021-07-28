@@ -1,24 +1,35 @@
 import styled from "styled-components"
 import colors from "../constants/colors";
+import mediaSizes from "../constants/mediaSizes";
 
 const Blocks = styled.div`
     width: 100%;
-    // background: red;
     display: flex;
     justify-content: space-between;
+    @media (max-width: ${mediaSizes.md.maxWidth}) {
+        flex-direction: column;
+    }
 `;
 const Block = styled.div`
-    // background: green;
     width: 24%;
+    @media (max-width: ${mediaSizes.md.maxWidth}) {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-bottom: 4rem;
+        flex-direction: column;
+    }
 `;
 const C = styled.div`
-    // background:green
+    width: 100%;
 `;
 const Logo = styled.div`
     max-width: 15rem;
+    @media (max-width: ${mediaSizes.md.maxWidth}) {margin: 0 auto;}
 `;
 const SocialMedia = styled.div`
     margin-top: 2rem;
+    text-align:center;
 
     & > svg{
         margin: 1rem;
@@ -30,6 +41,11 @@ const Wrap = styled.div`
         margin: 0;
         margin-bottom: 1rem
     }
+    width: 100%;
+    text-align:center;
+   
+    // @media (max-width: ${mediaSizes.md.maxWidth}) {
+    // }
 `;
 
 const H1 = styled.h2`
@@ -38,7 +54,9 @@ const H1 = styled.h2`
 `;
 const Form = styled.div`
 display:flex;
+    width:100%;
     flex-direction: column;
+    
 `;
 const Label = styled.div`
     font-size: 1rem;
